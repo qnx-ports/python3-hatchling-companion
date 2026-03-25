@@ -3,7 +3,7 @@
 # Maintainer: Elliott Mazzuca <emazzuca@qnx.com>
 pkgname=python3-hatchling
 pkgver=1.27.0
-pkgrel=${pkgrel:-0}
+pkgrel=0
 pkgdesc="Modern, extensible Python build backend"
 url="https://hatch.pypa.io/latest/"
 license="MIT"
@@ -20,7 +20,6 @@ package() {
         "$srcdir"/hatchling-$pkgver-py3-none-any.whl
 }
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 35a2ec9f38e3825993a90b71e4cffc18307eaf0e33a02f39a4105680e90066283da5a738e618b9d1a0d78a6d588751d78504af6e7a149b71b93a0945ec970748  hatchling-1.27.0-py3-none-any.whl
 "
